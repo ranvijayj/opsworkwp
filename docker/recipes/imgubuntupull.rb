@@ -1,8 +1,8 @@
-#docker_service 'default' do
-#  action [:create, :start]
-#end
+docker_service 'default' do
+  action [:create, :start]
+end
 
-docker_image 'ubuntu:latest' do
+docker_image 'ubuntu' do
   action :pull
 end
 
